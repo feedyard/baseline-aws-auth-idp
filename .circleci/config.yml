@@ -10,7 +10,7 @@ workflows:
       - terraform/plan:
           context: infra-pipeline
           aws-region: us-east-1
-          encoded-file: environment.bin
+          encoded-file: .environment.bin
           terraform-cloud-token: TERRAFORM_CLOUD_TOKEN
           working-directory: master-account-idp-integration
           env: sandbox

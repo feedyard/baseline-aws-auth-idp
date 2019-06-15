@@ -1,4 +1,5 @@
 *.bin
+.*.bin
 master-account-idp-integration/saml_metadata.xml
 .ruby-version
 Gemfile.lock
