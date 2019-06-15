@@ -20,19 +20,19 @@ populate the Environment, the pipeline for example demonstrates:
 * AWS programmatic keys maintained/retrieved within the repo using openssl public/private encryption.
 * All other needed keys retrieved from AWS Secrets Manager
 
-*aws credentials* for the targeted OU master account
-export AWS_ACCOUNT_NUMBER=999999999999
-export AWS_ACCESS_KEY_ID=AKIA••••••••••••••••
-export AWS_SECRET_ACCESS_KEY=••••••••••••••••••••••••••••••••
-export AWS_REGION=us-east-1
+*aws credentials* for the targeted OU master account  
+export AWS_ACCOUNT_NUMBER=999999999999  
+export AWS_ACCESS_KEY_ID=AKIA••••••••••••••••  
+export AWS_SECRET_ACCESS_KEY=••••••••••••••••••••••••••••••••  
+export AWS_REGION=us-east-1  
 
-*auth0 tenant and application client credentials*
-export AUTH0_TENANT=mytenantdomain.auth0.com
-export AUTH0_APP_CLIENT_ID=••••••••••••••••
-export AUTH0_APP_CLIENT_SECRET=••••••••••••••••••••••••••••••
+*auth0 tenant and application client credentials*  
+export AUTH0_TENANT=mytenantdomain.auth0.com   
+export AUTH0_APP_CLIENT_ID=••••••••••••••••  
+export AUTH0_APP_CLIENT_SECRET=••••••••••••••••••••••••••••••  
 
-*github oauth app client credentials and access token*
-export GITHUB_ORGANIZATION=github org that contains the teams used to define access permissions
-export GITHUB_OAUTH_APP_CLIENT_ID=••••••••••••••••
-export GITHUB_OAUTH_APP_CLIENT_SECRET=••••••••••••••••••••••••••••••••
-export GITHUB_AUTOMATION_TOKEN=••••••••••••personal access token for github org automation user (e.g., machine account)
+*github oauth app client credentials and access token*  
+export GITHUB_ORGANIZATION=github org that contains the teams used to define access permissions  
+export GITHUB_OAUTH_APP_CLIENT_ID=••••••••••••••••  
+export GITHUB_OAUTH_APP_CLIENT_SECRET=••••••••••••••••••••••••••••••••  
+export GITHUB_AUTOMATION_TOKEN=••••••••••••personal access token for github org automation user (e.g., machine account)  
