@@ -1,0 +1,15 @@
+---
+version: 2.1
+
+orbs:
+  terraform: feedyard/terraform@dev:latest
+
+workflows:
+  baseline-aws-auth-idp-pipeline:
+    jobs:
+      - terraform/plan:
+          aws-region: us-east-1
+          encoded-file: environment.bin
+          terraform-cloud-token: TERRAFORM_CLOUD_TOKEN
+          working-directory: master-account-idp-integration
+          env: sandbox

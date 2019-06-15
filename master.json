@@ -1,0 +1,17 @@
+{
+  "project_name": "aws-idp",
+  "account_name": "feedyard-aws-master-account",
+  "saml_provider_name": "auth0-saml",
+  "saml_metadata_filename": "saml_metadata.xml",
+  "github_application_name": "feedyardxyz",
+  "idp_aws_role_map": [
+    {
+      "idp_role": "platform_team",
+      "aws_role": "FederatedRolePlatformTeam"
+    },
+    {
+      "idp_role": "operator",
+      "aws_role": "FederatedRoleOperator"
+    }
+  ]
+}

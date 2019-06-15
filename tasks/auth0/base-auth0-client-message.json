@@ -1,0 +1,31 @@
+{
+  "addons": {
+    "samlp": {
+      "audience": "https://signin.aws.amazon.com/saml",
+      "mappings": {
+        "email": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress",
+        "name": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
+      },
+      "createUpnClaim": false,
+      "passthroughClaimsWithNoMapping": false,
+      "mapUnknownClaimsAsIs": false,
+      "mapIdentities": false,
+      "nameIdentifierFormat": "urn:oasis:names:tc:SAML:2.0:nameid-format:persistent",
+      "nameIdentifierProbes": [
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+      ]
+    },
+    "aws": {}
+  },
+  "callbacks": [
+    "https://signin.aws.amazon.com/saml",
+    "http://localhost:8000/code"
+  ],
+  "jwt_configuration": {
+    "alg": "HS256",
+    "lifetime_in_seconds": 144000,
+    "secret_encoded": true
+  },
+  "token_endpoint_auth_method": "none",
+  "app_type": "non_interactive"
+}

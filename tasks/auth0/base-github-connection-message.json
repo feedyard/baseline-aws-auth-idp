@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "strategy": "github",
+  "options": {
+    "client_id": "",
+    "client_secret": "",
+    "profile": true,
+    "email": true,
+    "read_user": false,
+    "follow": false,
+    "public_repo": false,
+    "repo": false,
+    "repo_deployment": false,
+    "repo_status": false,
+    "delete_repo": false,
+    "notifications": false,
+    "gist": false,
+    "read_repo_hook": false,
+    "write_repo_hook": false,
+    "admin_repo_hook": false,
+    "read_org": true,
+    "write_org": false,
+    "admin_org": false,
+    "read_public_key": false,
+    "write_public_key": false,
+    "admin_public_key": false,
+    "scope": []
+  }
+}
