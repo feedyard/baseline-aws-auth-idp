@@ -8,6 +8,7 @@ workflows:
   baseline-aws-auth-idp-pipeline:
     jobs:
       - terraform/plan:
+          context: infra-pipeline
           aws-region: us-east-1
           encoded-file: environment.bin
           terraform-cloud-token: TERRAFORM_CLOUD_TOKEN
