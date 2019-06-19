@@ -13,4 +13,4 @@ workflows:
           encoded-file: .environment.bin
           terraform-cloud-token: TERRAFORM_CLOUD_TOKEN
           working-directory: master-account-idp-integration
-          env: sandbox
+          env: master
