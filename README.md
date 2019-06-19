@@ -35,3 +35,5 @@ export GITHUB_ORGANIZATION=github org that contains the teams used to define acc
 export GITHUB_OAUTH_APP_CLIENT_ID=••••••••••••••••  
 export GITHUB_OAUTH_APP_CLIENT_SECRET=••••••••••••••••••••••••••••••••  
 export GITHUB_AUTOMATION_TOKEN=••••••••••••personal access token for github org automation user (e.g., machine account)  
+
+openssl rsautl -decrypt -inkey ${PIPELINE_PRIVATE_PEM} -in key.bin.enc -out key.bin
