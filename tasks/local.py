@@ -7,7 +7,7 @@ PRIVATE_PEM='~/.circleci/private/private.pem'
 @task
 def encfile(ctx, decoded):
     """encrypt file using local encryption key"""
-    ctx.run('openssl enc -aes-256-cbc -salt -in {0} -out {0}.enc -pass file:./key.bin'.format(decoded))
+    ctx.run('openssl enc -aes-256-cbc -md sha512 -salt -in {0} -out {0}.enc -pass file:./key.bin'.format(decoded))
     ctx.run('sha256sum {0}.enc > {0}.enc.sha'.format(decoded))
 
 @task
@@ -23,7 +23,7 @@ def decfile(ctx, filename):
     ctx.run('sha256sum --check --status key.bin.enc.sha')
     ctx.run('openssl rsautl -decrypt -inkey {} -in key.bin.enc -out key.bin'.format(PRIVATE_PEM))
     ctx.run('sha256sum --check --status {}.enc.sha'.format(filename))
-    ctx.run('openssl enc -d -aes-256-cbc -in {0}.enc -out {0} -pass file:./key.bin'.format(filename))
+    ctx.run('openssl enc -d -aes-256-cbc -md sha512 -in {0}.enc -out {0} -pass file:./key.bin'.format(filename))
 
 @task
 def validate(ctx):
