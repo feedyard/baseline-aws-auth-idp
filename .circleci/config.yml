@@ -11,8 +11,6 @@ workflows:
           context: infra-pipeline
           aws-region: us-east-1
           encoded-file: environment.bin
-          use-openssl: true
-          private-key: PIPELINE_PRIVATE_PEM
           terraform-cloud-token: TERRAFORM_CLOUD_TOKEN
           working-directory: master-account-idp-integration
           env: master

@@ -15,9 +15,9 @@ See section below for the access credentials associated with this demo.
 ### credential requirements
 
 The example assumes the following environment variables are available. Although any number of methods can be used to  
-populate the Environment, the pipeline for example demonstrates:
-* AWS programmatic keys maintained/retrieved within the repo using openssl public/private encryption.
-* All other needed keys retrieved from AWS Secrets Manager
+populate the Environment, since this example assumes a greenfield bootstrap of account config, the pipeline  
+demonstrates:
+* AWS programmatic keys maintained/retrieved within the repo using gnupg symmetric encryption
 
 *aws credentials* for the targeted OU master account  
 export AWS_ACCOUNT_NUMBER=999999999999  
