@@ -11,6 +11,7 @@ the minimum to obtain an [access token for using the Management API](https://aut
 
 See section below for the access credentials associated with this demo.  
 
+
 ### credential requirements
 
 The example assumes the following environment variables are available. Although any number of methods can be used to  
